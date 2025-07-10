@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing Page Preview</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0a0a0a 0%, #1c1c1c 100%);
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .landing-container {
+      background-color: #000;
+      width: 400px;
+      border-radius: 15px;
+      padding: 24px;
+      margin: 100px auto;
+      text-align: center;
+      animation: pulseGlow 3s infinite ease-in-out;
+    }
+
+    /* Headings spacing */
+    .landing-container h3,
+    .landing-container h2 {
+      margin: 10px 0;
+    }
+
+    /* Vertical group container */
+    .button-vertical-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* equal gap between each item */
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    /* Make the <a> fill the container width */
+    .button-vertical-group a {
+      width: 100%;
+      text-decoration: none;
+    }
+
+    /* Buttons style */
+    .button-vertical-group button {
+      background: linear-gradient(145deg, black, yellow);
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%; /* full width */
+      color: white;
+    }
+
+    /* Hover effect */
+    .button-vertical-group button:hover {
+      color: black;
+      box-shadow: 0 0 35px rgb(255, 0, 0);
+      transform: scale(1.05);
+    }
+
+    /* Active click effect */
+    .button-vertical-group button:active {
+      background-color: white;
+      color: black;
+      box-shadow: 0 0 45px white;
+      transform: scale(0.98);
+    }
+
+    /* "Or" text styling */
+    .button-vertical-group p {
+      margin: 0;
+      font-weight: bold;
+      font-size: 18px;
+      color: white;
+    }
+
+    /* Optional glow animation */
+    @keyframes pulseGlow {
+      0% {
+        box-shadow: 0 0 10px #73ff00;
+      }
+      50% {
+        box-shadow: 0 0 25px #73ff00;
+      }
+      100% {
+        box-shadow: 0 0 10px #73ff00;
+      }
+    }
+   
+    @keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+  </style>
+</head>
+<body>
+
+  <div class="landing-container">
+    <h3>Welcome To The</h3>
+    <h2>DARK REALM</h2>
+
+    <div class="button-vertical-group">
+      <a href="register.html"><button>Register</button></a>
+      <p>Or</p>
+      <a href="login.html"><button>Login</button></a>
+    </div>
+  </div>
+
+</body>
+</html>

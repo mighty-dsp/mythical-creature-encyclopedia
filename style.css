@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=EB+Garamond&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1c1c1c 100%);
+  color: #e9decf;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: rgba(10, 10, 10, 0.95);
+  padding: 1rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+}
+
+header h1 {
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 3rem;
+  color: #d8af4f;
+  text-shadow: 0 0 10px #d8af4f;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: #f1c40f;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #f1c40f;
+}
+
+main {
+  padding: 2rem;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero {
+  text-align: center;
+  background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ffd700;
+}
+
+.hero p {
+  margin: 1rem auto;
+  max-width: 600px;
+  font-size: 1.2rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #d8af4f;
+  color: #1c1c1c;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hero .btn:hover {
+  background-color: #fff4c1;
+  transform: scale(1.05);
+}
+
+.creatures ul, .types ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.creatures li, .types li {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.creatures li::before, .types li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #d8af4f;
+}
+
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border: 3px solid #d8af4f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #121212;
+  border-top: 1px solid #444;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+body {
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(20, 0, 20);
+}
+.landing-container {
+  background-color: black;
+  width: 400px;
+  border-radius: 15px;
+  padding: 24px;
+  margin: 100px auto;
+  text-align: center;
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+.landing-container h3 {
+  font-size: 2em;
+}
+
+.landing-container h2 {
+  font-size: 2.5em;
+  padding-bottom: 10px;
+  margin-bottom: 35px;
+}
+.landing-container p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+.landing-container a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+.landing-container button {
+  background: linear-gradient(145deg, black, yellow);
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.landing-container button:hover {
+  background: yellow; 
+  color: black;
+  box-shadow: 0 0 35px rgb(255, 0, 0);
+  transform: scale(1.05);
+}
+.landing-container button:active {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 45px white;
+  transform: scale(0.98);
+}
+
+.login-container {
+  background-color: black;
+  width: 400px;
+  height: 450px;
+  border-radius: 15px;
+  padding: 24px;
+  margin: 100px auto;
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2.5em;
+}
+
+.login-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-top: 20px;
+  color: white;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  background-color: #1a001a;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(145deg, black, yellow);
+  color: yellow;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 50px;
+}
+
+button:hover {
+  background: yellow;
+  color: rgb(255, 0, 0);
+  box-shadow: 0 0 35px rgb(255, 0, 0);
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 45px white;
+  transform: scale(0.98);
+}
+
+body p {
+  text-align: center;
+  padding-bottom: 100px;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.forgot-password-container {
+  background-color: black;
+  width: 400px;
+  height: 350px;
+  border-radius: 15px;
+  padding: 24px;
+  margin: 100px auto;
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+.forgot-password-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.forgot-password-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-top: 20px;
+  color: white;
+}
+
+.forgot-password-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  background-color: #1a001a;
+  box-sizing: border-box;
+}
+
+.register-container {
+  background-color: black;
+  width: 400px;
+  height: 600px;
+  border-radius: 15px;
+  padding: 24px;
+  margin: 100px auto;
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2.5em;
+
+}
+
+.register-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-top: 20px;
+  color: white;
+}
+
+.register-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  background-color: #1a001a;
+  color: var(--text-light);
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(145deg, black, yellow);
+  font-size: 16px;
+  color: yellow;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 40px;
+}
+
+button:hover {
+  color: black;
+  box-shadow: 0 0 35px rgb(255, 0, 0);
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 45px white;
+  transform: scale(0.98);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+ @keyframes pulseGlow {
+      0% {
+        box-shadow: 0 0 10px #73ff00;
+      }
+      50% {
+        box-shadow: 0 0 25px #73ff00;
+      }
+      100% {
+        box-shadow: 0 0 10px #73ff00;
+      }
+    }
